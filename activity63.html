@@ -1,0 +1,23 @@
+<html>
+    <body>
+        <h1>Java script class</h1>
+        <p id="student1"></p>
+        <p id="student2"></p>
+        <script>
+            class student{
+                constructor(name,year){
+                    this.name=name;
+                    this.year=year;
+                }
+                age(){
+                    let date=new Date();
+                    return date.getFullYear()-this.year;
+                }
+            }
+            const student1=new student("riya",2014);
+            document.getElementById("student1").innerHTML=student1.name+":"+student1.year+":"+student1.age();
+            const student2=new student("tina",2013);
+            document.getElementById("student2").innerHTML=student2.name+":"+student2.year+":"+student2.age();
+        </script>
+    </body>
+</html>
