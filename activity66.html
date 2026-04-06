@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <button onclick="my()">try me</button>
+        <p id="result"></p>
+        <script>
+            function my(){
+                var x=10;
+                var y=20;
+                var a=eval("x+y")+"<br>";
+                var b=eval("2*2")+"<br>";
+                var c=eval("x-y")+"<br>";
+                var res=a+b+c;
+                document.getElementById("result").innerHTML=res;
+            }
+        </script>
+    </body>
+</html>
