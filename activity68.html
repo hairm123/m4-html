@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <p id="r"></p>
+        <script>
+            try{
+                var x=5;
+                var y=0;
+                var z=x/y;
+                document.write(z);
+            }
+            catch(err){
+                document.getElementById("r").innerHTML=err.message;
+            }
+        </script> 
+    </body>
+</html>
