@@ -1,0 +1,17 @@
+<html>
+    <body>
+        <form name="f" onsubmit="fun()">
+            name:<input type="text" name="name"><br>
+            <input type="submit">
+        </form>
+        <script>
+            function fun(){
+                var a=document.forms["f"]["name"].value;
+                if(a==""){
+                    alert("fill form");
+                    return false;
+                }
+            }
+        </script>
+    </body>
+</html>

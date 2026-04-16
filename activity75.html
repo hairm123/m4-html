@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <p>enter a number and click ok</p>
+        <input id="id" type="number" min="100" max="300" required>
+        <button onclick="my()">OK</button>
+        <p id="result"></p>
+        <script>
+            function my(){
+                var input = document.getElementById("id");
+                if(!input.checkValidity()){
+                    document.getElementById("result").innerHTML=input.validationMessage;
+                }
+                else{
+                    document.getElementById("result").innerHTML="input ok";
+                }
+            }
+        </script>
+    </body>
+</html>
